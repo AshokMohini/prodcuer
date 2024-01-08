@@ -1,0 +1,17 @@
+#
+#
+#
+#camel:
+#  component:
+#    kafka:
+#      brokers: localhost:9092
+#      client-id: mysql-to-kafka-producer
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-serializer: io.confluent.kafka.serializers.protobuf.KafkaProtobufSerializer
+#      schema-registry-u-r-l: http://localhost:8081
+#      additional-properties:
+#        "[specific.protobuf.value.type]": com.debezium.application.proto.OrderHistoryEvent
+
+spring:
+  jmx:
+    enabled: false

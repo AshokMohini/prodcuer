@@ -1,0 +1,14 @@
+syntax = "proto3";
+package application;
+
+option java_package = "com.debezium.application.proto";
+option java_outer_classname = "CustomerHistoryEventWrapper";
+option java_multiple_files = true;
+
+message OrderHistoryEvent {
+  string order_id = 1;
+  string order_name = 2;
+  string customer_id = 3;
+  string order_status=4;
+  string operation = 5;
+}
